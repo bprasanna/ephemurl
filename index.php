@@ -43,9 +43,15 @@
 				    
 			        <div id='notifications'></div>
 		     </div>
+             <hr/>
 		     <div class="panel-body">
     		      <div id='urlsDiv'></div>
   		     </div>
+             <div class="panel-footer">
+             
+    Drag this link <a href="javascript:location.href='http://ephemurl.herokuapp.com/index.php?titleIn='+encodeURIComponent(document.title)+'&urlIn='+encodeURIComponent(window.location.host+window.location.pathname)" target="_blank">ephemurl</a> to bookmarks bar, to directly add a page to Ephemurl
+             </div>
+
    </div>
 
     <script>
@@ -167,6 +173,5 @@
       }
     </script>
     </div>
-    <a href="javascript:location.href='http://ephemurl.herokuapp.com/index.php?titleIn='+encodeURIComponent(document.title)+'&urlIn='+encodeURIComponent(window.location.host+window.location.pathname)" target="_blank">ephemurl</a>
   </body>
 </html>
