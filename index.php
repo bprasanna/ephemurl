@@ -162,7 +162,7 @@
       });
       
       function reloadPage() {
-      	window.location.href = 'ephemurl.html';
+      	window.location.href = 'http://ephemurl.herokuapp.com/';
       }
     </script>
     </div>
