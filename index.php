@@ -1,4 +1,5 @@
 <!DOCTYPE html> <html> <head> <meta charset="UTF-8">
+    <title>Ephemurl - Ephemeral URLs - Short living interesting links</title>
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"></link>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script src='http://getbootstrap.com/dist/js/bootstrap.min.js'></script>
@@ -133,12 +134,12 @@
 
 			var tmparr = prmarr[0].split("=");
 		    params[0] = tmparr[1];		    
-			var titleIn = params[0];
+			var titleIn = decodeURIComponent(params[0]);
 
 			
 			tmparr = prmarr[1].split("=");
 		    params[1] = tmparr[1];
-			var urlIn = params[1];
+			var urlIn = decodeURIComponent(params[1]);
 
 			
 			if ((trim12(titleIn)) !== '' && (trim12(urlIn) !== '')){
