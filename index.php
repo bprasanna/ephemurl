@@ -167,5 +167,6 @@
       }
     </script>
     </div>
+    <a href="javascript:location.href='http://ephemurl.herokuapp.com/index.php?titleIn='+encodeURIComponent(document.title)+'&urlIn='+encodeURIComponent(window.location.host+window.location.pathname)" target="_blank">ephemurl</a>
   </body>
 </html>
