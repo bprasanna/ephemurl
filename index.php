@@ -1,5 +1,6 @@
 <!DOCTYPE html> <html> <head> <meta charset="UTF-8">
     <title>Ephemurl - Ephemeral URLs - Short living interesting links</title>
+    <link rel="shortcut icon" type="image/png" href="glyphicons_050_link.png" />
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"></link>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script src='http://getbootstrap.com/dist/js/bootstrap.min.js'></script>
