@@ -17,7 +17,6 @@ function ephemurlit(){
     var urlIn=encodeURIComponent(window.location.host+window.location.pathname);
     
 
-    //Evaluate the values
     if(titleIn===''){
         return false;       
     }
@@ -26,7 +25,6 @@ function ephemurlit(){
         return false;
     }
     
-    //Clear the content page
     if(xmlHttp != null){
         xmlHttp.onreadystatechange=function(){
             if (xmlHttp.readyState == 4)
@@ -51,8 +49,7 @@ function ephemurlit(){
         return true;
     } else {
         alert('Your browser doesn\'t support AJAX');
-        return;     
+        return false;     
     }
 }
 
-ephemurlit();
