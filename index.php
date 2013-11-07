@@ -1,6 +1,7 @@
 <!DOCTYPE html> <html> <head> <meta charset="UTF-8">
     <title>Ephemurl - Ephemeral URLs - Short living interesting links</title>
     <link rel="shortcut icon" type="image/png" href="glyphicons_050_link.png" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"></link>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script src='http://getbootstrap.com/dist/js/bootstrap.min.js'></script>
@@ -17,7 +18,7 @@
        body {
             background: #c0c0c0;
             margin: 0 auto;
-            font-family: arial, ubuntu, helvetica, sans-serif;
+            font-family: 'Droid Sans',arial, ubuntu, helvetica, sans-serif;
        }
 
     </style>
@@ -29,7 +30,7 @@
     <div class="panel panel-default">
 		     <div class="panel-heading">
 			    <h3 class="panel-title"><span style="color:gray">EphemURL=</span>Ephemeral+URLs</h3>
-			    <b style="font-weight:bold;font-size:14px">Consider adding a page you enjoyed reading recently</b>&nbsp;&nbsp;
+			    <b style="font-weight:bold;font-size:14px">Consider adding a page you enjoyed reading recently</b>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="#" onclick="displayAboutApp()" title="" style="color:gray" data-original-title="About" data-placement="bottom" id="aboutapp" data-toggle="popover" data-content="Ephemurl is a web application built using firebase to share links across browsers. The idea is to have only minimal number of interesting URLs at any point in time. When someone opens ephemurl's website newly added URLs are synched across all the sites using firebase's APIs. Old links are removed periodically to keep the data fresh. This is a proof of concept application only. Still lot more are there to explore.">About</a>
 		     </div>
 		     <div class="panel-body">
@@ -100,8 +101,8 @@
         displayURLs(uid, newurl.title, newurl.url);
       });
       
-      myDataRef.on('child_removed', function(oldChildSnapshot) {
-        //refreshURLs();
+      myDataRef.on('child_removed', function(snapshot) {
+        refreshURLs();
       });
 
 
@@ -120,7 +121,6 @@
       function removeURL(uid) {
         var urlRef = new Firebase('https://ephemurl.firebaseio.com/urls/'+uid);
         urlRef.remove();
-        $(uid).remove();
       };
 
 
@@ -161,7 +161,7 @@
       function addEntryFromBookMarklet(titleIn, urlIn) {
        if ((trim12(titleIn)) !== '' && (trim12(urlIn) !== '')){
             myDataRef.push({title: titleIn, url: urlIn});
-            //setInterval("reloadPage()", 5000);
+            setInterval("reloadPage()", 5000);
           } else {
             displayError();
           }
