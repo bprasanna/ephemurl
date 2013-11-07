@@ -11,7 +11,7 @@ titleIn = encodeURIComponent(titleIn).replace(/'/g, '%27');
 urlIn = encodeURIComponent(urlIn).replace(/'/g, '%27');
 window.frames['ipb295319'].document.write(
 '<html><body style="background-color: transparent;">' +
-'<form action="//ephemurl.herokuapp.com/handledata.php" method="get" id="urlform" accept-charset="utf-8">' +
+'<form action="http://ephemurl.herokuapp.com/handledata.php" method="get" id="urlform" accept-charset="utf-8">' +
 '<input type="hidden" name="titleIn" id="titleIn" value=""/>' +
 '<input type="hidden" name="urlIn" id="urlIn" value=""/>' +
 '<input type="hidden" name="id" value="ipb295319"/>' +
