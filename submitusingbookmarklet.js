@@ -1,11 +1,12 @@
+function() {
 var i=document.createElement('iframe');
 i.setAttribute('name', 'ipb295319');
 i.setAttribute('id', 'ipb295319');
 i.setAttribute('allowtransparency', 'true');
 i.setAttribute('style', 'border: 0; width: 1px; height: 1px; position: absolute; left: 0; top: 0;');
 document.body.appendChild(i);
-titleIn = e(titleIn).replace(/'/g, '%27');
-urlIn = e(urlIn).replace(/'/g, '%27');
+var titleIn = e(titleIn).replace(/'/g, '%27');
+var urlIn = e(urlIn).replace(/'/g, '%27');
 window.frames['ipb295319'].document.write(
 '<html><body style="background-color: transparent;">' +
 '<form action="http://ephemurl.herokuapp.com/index.php" method="get" id="f" accept-charset="utf-8">' +
@@ -19,3 +20,4 @@ window.frames['ipb295319'].document.write(
 "d.getElementById('f').submit();" +
 "</scr"+"ipt></body></html>"
 );
+}
