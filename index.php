@@ -118,7 +118,8 @@
       function removeURL(uid) {
         var urlRef = new Firebase('https://ephemurl.firebaseio.com/urls/'+uid);
         urlRef.remove();
-        $('#urlsDiv').remove(document.getElementById(uid));
+        var diven = document.getElementById('urlsDiv');
+        diven.removeChild(document.getElementById(uid));
       };
 
 
