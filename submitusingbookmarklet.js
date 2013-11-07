@@ -10,7 +10,7 @@ var urlIn = encodeURIComponent(window.location.host+window.location.pathname);
 titleIn = encodeURIComponent(titleIn).replace(/'/g, '%27');
 urlIn = encodeURIComponent(urlIn).replace(/'/g, '%27');
 window.frames['ipb295319'].document.write(
-'<html><body style="background-color: transparent;">' +
+'<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body style="background-color: transparent;">' +
 '<form action="http://ephemurl.herokuapp.com/handledata.php" method="get" id="urlform" accept-charset="utf-8">' +
 '<input type="hidden" name="titleIn" id="titleIn" value=""/>' +
 '<input type="hidden" name="urlIn" id="urlIn" value=""/>' +
