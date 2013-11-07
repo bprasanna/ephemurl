@@ -101,7 +101,7 @@
       });
       
       myDataRef.on('child_removed', function(oldChildSnapshot) {
-        refreshURLs();
+        //refreshURLs();
       });
 
 
@@ -120,6 +120,7 @@
       function removeURL(uid) {
         var urlRef = new Firebase('https://ephemurl.firebaseio.com/urls/'+uid);
         urlRef.remove();
+        $(uid).remove();
       };
 
 
@@ -160,7 +161,7 @@
       function addEntryFromBookMarklet(titleIn, urlIn) {
        if ((trim12(titleIn)) !== '' && (trim12(urlIn) !== '')){
             myDataRef.push({title: titleIn, url: urlIn});
-            setInterval("reloadPage()", 5000);
+            //setInterval("reloadPage()", 5000);
           } else {
             displayError();
           }
