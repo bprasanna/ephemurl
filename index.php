@@ -79,7 +79,7 @@
           }      
       }
       
-      var myDataRef = new Firebase('https://ephemurl.firebaseio.com/');
+      var myDataRef = new Firebase('https://ephemurl.firebaseio.com/urls');
       $('#urlInput').keypress(function (e) {
         if (e.keyCode == 13) {
           var title = $('#titleInput').val();
@@ -118,7 +118,7 @@
 
 
       function removeURL(uid) {
-        var urlRef = new Firebase('https://ephemurl.firebaseio.com/'+uid);
+        var urlRef = new Firebase('https://ephemurl.firebaseio.com/urls/'+uid);
         urlRef.remove();
       };
 
