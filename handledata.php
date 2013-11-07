@@ -2,6 +2,9 @@
 $titleVal = pg_escape_string($_POST["titleIn"]); 
 $urlVal = pg_escape_string($_POST["urlIn"]); 
 
+echo $titleVal;
+echo $urlVal;
+
 // Get cURL resource
 $curl = curl_init();
 // Set some options - we are passing in a useragent too here
