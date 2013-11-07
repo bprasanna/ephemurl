@@ -5,6 +5,8 @@ i.setAttribute('id', 'ipb295319');
 i.setAttribute('allowtransparency', 'true');
 i.setAttribute('style', 'border: 0; width: 1px; height: 1px; position: absolute; left: 0; top: 0;');
 document.body.appendChild(i);
+var titleIn = encodeURIComponent(document.title);
+var urlIn = encodeURIComponent(window.location.host+window.location.pathname);
 titleIn = encodeURIComponent(titleIn).replace(/'/g, '%27');
 urlIn = encodeURIComponent(urlIn).replace(/'/g, '%27');
 window.frames['ipb295319'].document.write(
