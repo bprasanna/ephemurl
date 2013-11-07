@@ -6,9 +6,6 @@
     <script src='http://getbootstrap.com/dist/js/bootstrap.min.js'></script>
     <script src='https://cdn.firebase.com/v0/firebase.js'></script>
 
-
-
-
     <style>
        #wrapper2 {
             background: #f8f8f8;
@@ -33,7 +30,7 @@
 		     <div class="panel-heading">
 			    <h3 class="panel-title"><span style="color:gray">EphemURL=</span>Ephemeral+URLs</h3>
 			    <b style="font-weight:bold;font-size:14px">Consider adding a page you enjoyed reading recently</b>&nbsp;&nbsp;
-<a href="#" onclick="displayAboutApp()" title="" style="color:gray" data-original-title="About" data-placement="bottom" id="aboutapp" data-toggle="popover" data-content="Ephemurl is a web application built using firebase to share links across browsers. The idea is to have only minimal number of interesting URLs at any point in time. When someone opens ephemurl's website newly added URLs are synched across all the sites using firebase's APIs. Old links are removed periodically to keep the data fresh. This is a proof of concept of application only. Still lot more are there to explore.">About</a>
+<a href="#" onclick="displayAboutApp()" title="" style="color:gray" data-original-title="About" data-placement="bottom" id="aboutapp" data-toggle="popover" data-content="Ephemurl is a web application built using firebase to share links across browsers. The idea is to have only minimal number of interesting URLs at any point in time. When someone opens ephemurl's website newly added URLs are synched across all the sites using firebase's APIs. Old links are removed periodically to keep the data fresh. This is a proof of concept application only. Still lot more are there to explore.">About</a>
 		     </div>
 		     <div class="panel-body">
 			        <input type='text' class="form-control" id='titleInput' placeholder='Page Title' title="Enter page/article title" />
