@@ -101,9 +101,6 @@
         displayURLs(uid, newurl.title, newurl.url);
       });
       
-      myDataRef.on('child_removed', function(snapshot) {
-        refreshURLs();
-      });
 
 
 
@@ -121,6 +118,7 @@
       function removeURL(uid) {
         var urlRef = new Firebase('https://ephemurl.firebaseio.com/urls/'+uid);
         urlRef.remove();
+        $('urlsDiv').remove(document.getElementById(uid));
       };
 
 
