@@ -52,7 +52,7 @@
   		     </div>
              <div class="panel-footer">
              
-    Drag this bookmarklet link <a href="javascript:location.href='http://ephemurl.herokuapp.com/index.php?titleIn='+encodeURIComponent(document.title)+'&urlIn='+encodeURIComponent(window.location.host+window.location.pathname)" target="_blank">ephemurl</a> to bookmarks bar, to directly add a page to Ephemurl
+    Drag this bookmarklet link <a href="javascript:location.href='http://ephemurl.herokuapp.com/index.php?titleIn='+encodeURIComponent(document.title)+'&urlIn='+encodeURIComponent(document.location.href)" target="_blank">ephemurl</a> to bookmarks bar, to directly add a page to Ephemurl
              </div>
 
    </div>
