@@ -264,7 +264,7 @@
 			document.getElementById("currentCategory").value = categoryIn;
 			
 			if ((trim12(titleIn) !== '') && (trim12(urlIn) !== '') && (trim12(categoryIn) !== '')){
-			   addEntryFromBookMarklet(titleIn,urlIn);
+			   addEntryFromBookMarklet(titleIn,urlIn,categoryIn);
 			}
 			
 		}		
