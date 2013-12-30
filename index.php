@@ -171,7 +171,7 @@
 			}		    
 		}
 		
-		document.getElementById("bmlet").innerHTML = "Drag this bookmarklet link <a href=\"javascript:location.href='http://ephemurl.herokuapp.com/index.php?titleIn='+encodeURIComponent(document.title)+'&amp;urlIn='+encodeURIComponent(document.location.href)+'&amp;category='+encodeURIComponent("+currentCategory+")\" target=\"_blank\">ephemurl</a> to bookmarks bar, to directly add a page to Ephemurl";
+		document.getElementById("bmlet").innerHTML = "Drag this bookmarklet link <a href=\"javascript:location.href='http://ephemurl.herokuapp.com/index.php?titleIn='+encodeURIComponent(document.title)+'&amp;urlIn='+encodeURIComponent(document.location.href)+'&amp;category='+encodeURIComponent('"+currentCategory+"')\" target=\"_blank\">ephemurl</a> to bookmarks bar, to directly add a page to Ephemurl";
         
         $('#categoriesList')[0].scrollTop = $('#categoriesList')[0].scrollHeight;        
       };
